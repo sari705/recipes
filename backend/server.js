@@ -37,7 +37,7 @@ mongoose
 const recipeRoutes = require('./routes/recipes');
 app.use('/api/recipes', recipeRoutes);
 
-const userRoutes = require('./routes/Users'); // ודא ששמות התיקיות נכונים
+const userRoutes = require('./routes/users'); // ודא ששמות התיקיות נכונים
 app.use('/api/users', userRoutes);
 
 // טיפול בנתיבים שאינם קיימים
