@@ -24,7 +24,7 @@ const RecipeList = () => {
     useEffect(() => {
         const fetchRecipes = async () => {
             try {
-                const response = await axios.get('/api/recipes');
+                const response = await axios.get(`${backendUrl}/api/recipes`);
                 setRecipes(response.data);
             } catch (err) {
                 console.error('Error fetching recipes:', err);
@@ -112,7 +112,7 @@ const RecipeList = () => {
                                     }}
                                     onClick={() => navigate(`/recipes/${recipe._id}`)} // ניווט בלחיצה על הכרטיס
                                 />
-                                {console.log('Image URL:', `${backendUrl}${recipe.image_url}`)}
+                                {console.log('Image URL:', `${recipe.image_url}`)}
                                 <div className="card-body">
                                     <h5 className="card-title text-truncate" title={recipe.title}>
                                         {recipe.title}
