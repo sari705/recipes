@@ -1,0 +1,143 @@
+/* רקע הבאנר */
+.banner {
+    background-image: url("https://images.unsplash.com/photo-1604908554037-6465c6d76c2b");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner-content {
+    text-align: center;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .banner .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  
+  /* עיצוב נוסף */
+  .content {
+    padding: 20px;
+  }
+  
+  .features {
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  .feature {
+    max-width: 300px;
+    padding: 10px;
+  }
+  
+  .feature h3 {
+    color: #007bff;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+    color: #555;
+  }
+  /* עיצוב כללי לקונטיינר */
+.container {
+    margin-top: 20px;
+}
+
+
+
+/* עיצוב הכרטיסים */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px; /* גובה קבוע */
+    object-fit: cover;
+    border-bottom: 3px solid #f1f1f1;
+    border-radius: 10px 10px 0 0;
+}
+
+/* עיצוב טקסט בכרטיסים */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+/* עיצוב הכותרת הראשית */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+/* עיצוב כללי לקרוסלה */
+.home-carousel {
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home-carousel-inner {
+    position: relative;
+}
+
+.home-carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* עיצוב כיתוב */
+.home-carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* כפתורי מעבר */
+.home-carousel-control {
+    width: 5%;
+}
+
+.home-carousel-control-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.btn{
+    margin: 1%;
+}

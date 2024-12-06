@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "joi": "^17.13.3",
+    "react-scripts": "^5.0.1"
+  }
+}

@@ -1,0 +1,101 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+        direction: rtl;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+.collapse {
+    transition: height 0.3s ease-in-out;
+}
+.card-title {
+    font-weight: bold;
+    color: #333;
+    direction: rtl;
+}
+
+.card-footer h6 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+
+.card-footer button {
+    transition: all 0.3s ease;
+}
+
+.card-footer button:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    max-width: 1200px; /* או כל גודל שתרצה */
+    margin: 0 auto; /* מרכז את הקונטיינר */
+}
+
+.card {
+    max-width: 550px; /* קובע רוחב מקסימלי לכל כרטיס */
+    margin: 10px auto; /* מרכז את הכרטיס */
+}
+.img-fluid {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.badge {
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+.recipe-details {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-details h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.recipe-details ul,
+.recipe-details ol {
+    padding-left: 20px;
+}
+
+.recipe-details ul li,
+.recipe-details ol li {
+    margin-bottom: 10px;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
