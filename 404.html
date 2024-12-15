@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=./" />
+    <title>Page Not Found</title>
     <script>
-        // ניתוב מחדש ל-root index.html
-        const redirectTo = window.location.pathname.substr(1);
-        window.location.href = "/" + "#" + redirectTo;
+      // ניתוב מחדש ל-root של ה-Single Page Application
+      const redirectTo = window.location.pathname.substr(1);
+      window.location.replace(`./#${redirectTo}`);
     </script>
-</head>
-<body>
-    <p>Redirecting...</p>
-</body>
+  </head>
+  <body>
+    <h1>404 - Redirecting...</h1>
+    <p>If you are not redirected automatically, <a href="./">click here</a>.</p>
+  </body>
 </html>
