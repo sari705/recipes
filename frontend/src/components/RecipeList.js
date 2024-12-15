@@ -24,7 +24,7 @@ const RecipeList = () => {
     useEffect(() => {
         const fetchRecipes = async () => {
             try {
-                const response = await axios.get('/api/recipes');
+                const response = await axios.get(`${backendUrl}/api/recipes`);
                 setRecipes(response.data);
             } catch (err) {
                 console.error('Error fetching recipes:', err);
