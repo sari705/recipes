@@ -1,5 +1,7 @@
 import axios from "axios";
 
+const backendUrl = process.env.REACT_APP_BACKEND_URL;
+
 // utils.js
 
 
@@ -18,7 +20,7 @@ export const uploadImage = async (imageFile, token) => {
     formData.append('image', imageFile);
 
     const response = await axios.post(
-        'http://localhost:5000/api/recipes/upload',
+        `${backendUrl}/api/recipes/upload`,
         formData,
         {
             headers: { Authorization: `Bearer ${token}` },
